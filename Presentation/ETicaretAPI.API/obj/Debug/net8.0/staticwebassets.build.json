@@ -1,0 +1,39 @@
+{
+  "Version": 1,
+  "Hash": "p4qitEbzCnfEF+W9WtnBj2X805tDoFf+MQp6YvLMm7E=",
+  "Source": "ETicaretAPI.API",
+  "BasePath": "_content/ETicaretAPI.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "ETicaretAPI.API\\wwwroot",
+      "Source": "ETicaretAPI.API",
+      "ContentRoot": "C:\\Users\\a\\Desktop\\ETicaretUygulamasi\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\",
+      "BasePath": "_content/ETicaretAPI.API",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\a\\Desktop\\ETicaretUygulamasi\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\photo-images\\7a1f470951a0470639d1fb2099b2ee9e20240407_064145196.jpg",
+      "SourceId": "ETicaretAPI.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\a\\Desktop\\ETicaretUygulamasi\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\",
+      "BasePath": "_content/ETicaretAPI.API",
+      "RelativePath": "photo-images/7a1f470951a0470639d1fb2099b2ee9e20240407_064145196.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\photo-images\\7a1f470951a0470639d1fb2099b2ee9e20240407_064145196.jpg"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+2024-05-10 15:40:40.532 +03:00 [INF] User profile is available. Using 'C:\Users\a\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-10 15:40:41.378 +03:00 [INF] Now listening on: https://localhost:7222
+2024-05-10 15:40:41.390 +03:00 [INF] Now listening on: http://localhost:5142
+2024-05-10 15:40:41.396 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-10 15:40:41.399 +03:00 [INF] Hosting environment: Development
+2024-05-10 15:40:41.408 +03:00 [INF] Content root path: C:\Users\a\Desktop\ETicaretUygulamasi\ETicaretAPI\Presentation\ETicaretAPI.API
+2024-05-10 16:55:06.533 +03:00 [INF] User profile is available. Using 'C:\Users\a\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-10 16:55:07.139 +03:00 [INF] Now listening on: https://localhost:7222
+2024-05-10 16:55:07.141 +03:00 [INF] Now listening on: http://localhost:5142
+2024-05-10 16:55:07.143 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-10 16:55:07.144 +03:00 [INF] Hosting environment: Development
+2024-05-10 16:55:07.145 +03:00 [INF] Content root path: C:\Users\a\Desktop\ETicaretUygulamasi\ETicaretAPI\Presentation\ETicaretAPI.API
+2024-05-10 16:56:19.456 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7222/api/auth/login - null null
+2024-05-10 16:56:19.514 +03:00 [INF] CORS policy execution successful.
+2024-05-10 16:56:19.523 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7222/api/auth/login - 204 null null 74.135ms
+2024-05-10 16:56:19.533 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7222/api/auth/login - application/json 42
+2024-05-10 16:56:19.543 +03:00 [INF] CORS policy execution successful.
+2024-05-10 16:56:19.562 +03:00 [INF] Executing endpoint 'ETicaretAPI.API.Controllers.AuthController.Login (ETicaretAPI.API)'
+2024-05-10 16:56:19.599 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(ETicaret.Application.Features.Commands.AppUser.LoginUser.LoginUserCommandRequest) on controller ETicaretAPI.API.Controllers.AuthController (ETicaretAPI.API).
+2024-05-10 16:56:21.622 +03:00 [INF] Executed DbCommand (16ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NameSurname", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2024-05-10 16:56:21.968 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NameSurname", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2024-05-10 16:56:22.097 +03:00 [INF] Executed DbCommand (11ms) [Parameters=[@p17='?', @p0='?' (DbType = Int32), @p1='?', @p18='?', @p2='?', @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = DateTime), @p6='?', @p7='?', @p8='?', @p9='?', @p10='?', @p11='?' (DbType = Boolean), @p12='?', @p13='?' (DbType = DateTime), @p14='?', @p15='?' (DbType = Boolean), @p16='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE "AspNetUsers" SET "AccessFailedCount" = @p0, "ConcurrencyStamp" = @p1, "Email" = @p2, "EmailConfirmed" = @p3, "LockoutEnabled" = @p4, "LockoutEnd" = @p5, "NameSurname" = @p6, "NormalizedEmail" = @p7, "NormalizedUserName" = @p8, "PasswordHash" = @p9, "PhoneNumber" = @p10, "PhoneNumberConfirmed" = @p11, "RefreshToken" = @p12, "RefreshTokenEndDate" = @p13, "SecurityStamp" = @p14, "TwoFactorEnabled" = @p15, "UserName" = @p16
+WHERE "Id" = @p17 AND "ConcurrencyStamp" = @p18;
+2024-05-10 16:56:22.119 +03:00 [INF] Executing OkObjectResult, writing value of type 'ETicaret.Application.Features.Commands.AppUser.LoginUser.LoginUserSuccessCommandResponse'.
+2024-05-10 16:56:22.137 +03:00 [INF] Executed action ETicaretAPI.API.Controllers.AuthController.Login (ETicaretAPI.API) in 2532.7243ms
+2024-05-10 16:56:22.139 +03:00 [INF] Executed endpoint 'ETicaretAPI.API.Controllers.AuthController.Login (ETicaretAPI.API)'
+2024-05-10 16:56:22.160 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7222/api/auth/login - 200 null application/json; charset=utf-8 2627.2738ms
+2024-05-10 17:04:53.896 +03:00 [INF] User profile is available. Using 'C:\Users\a\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-10 17:04:54.379 +03:00 [INF] Now listening on: https://localhost:7222
+2024-05-10 17:04:54.445 +03:00 [INF] Now listening on: http://localhost:5142
+2024-05-10 17:04:54.448 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-10 17:04:54.449 +03:00 [INF] Hosting environment: Development
+2024-05-10 17:04:54.450 +03:00 [INF] Content root path: C:\Users\a\Desktop\ETicaretUygulamasi\ETicaretAPI\Presentation\ETicaretAPI.API
+2024-05-10 17:05:06.984 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7222/api/auth/login - null null
+2024-05-10 17:05:07.044 +03:00 [INF] CORS policy execution successful.
+2024-05-10 17:05:07.051 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7222/api/auth/login - 204 null null 72.1647ms
+2024-05-10 17:05:07.059 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7222/api/auth/login - application/json 42
+2024-05-10 17:05:07.068 +03:00 [INF] CORS policy execution successful.
+2024-05-10 17:05:07.089 +03:00 [INF] Executing endpoint 'ETicaretAPI.API.Controllers.AuthController.Login (ETicaretAPI.API)'
+2024-05-10 17:05:07.131 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(ETicaret.Application.Features.Commands.AppUser.LoginUser.LoginUserCommandRequest) on controller ETicaretAPI.API.Controllers.AuthController (ETicaretAPI.API).
+2024-05-10 17:05:08.866 +03:00 [INF] Executed DbCommand (15ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NameSurname", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2024-05-10 17:05:09.154 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NameSurname", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2024-05-10 17:05:09.298 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@p17='?', @p0='?' (DbType = Int32), @p1='?', @p18='?', @p2='?', @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = DateTime), @p6='?', @p7='?', @p8='?', @p9='?', @p10='?', @p11='?' (DbType = Boolean), @p12='?', @p13='?' (DbType = DateTime), @p14='?', @p15='?' (DbType = Boolean), @p16='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE "AspNetUsers" SET "AccessFailedCount" = @p0, "ConcurrencyStamp" = @p1, "Email" = @p2, "EmailConfirmed" = @p3, "LockoutEnabled" = @p4, "LockoutEnd" = @p5, "NameSurname" = @p6, "NormalizedEmail" = @p7, "NormalizedUserName" = @p8, "PasswordHash" = @p9, "PhoneNumber" = @p10, "PhoneNumberConfirmed" = @p11, "RefreshToken" = @p12, "RefreshTokenEndDate" = @p13, "SecurityStamp" = @p14, "TwoFactorEnabled" = @p15, "UserName" = @p16
+WHERE "Id" = @p17 AND "ConcurrencyStamp" = @p18;
+2024-05-10 17:05:09.322 +03:00 [INF] Executing OkObjectResult, writing value of type 'ETicaret.Application.Features.Commands.AppUser.LoginUser.LoginUserSuccessCommandResponse'.
+2024-05-10 17:05:09.345 +03:00 [INF] Executed action ETicaretAPI.API.Controllers.AuthController.Login (ETicaretAPI.API) in 2206.7976ms
+2024-05-10 17:05:09.349 +03:00 [INF] Executed endpoint 'ETicaretAPI.API.Controllers.AuthController.Login (ETicaretAPI.API)'
+2024-05-10 17:05:09.366 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7222/api/auth/login - 200 null application/json; charset=utf-8 2306.9242ms
+2024-05-10 17:05:11.560 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7222/api/products?page=0&size5 - null null
+2024-05-10 17:05:11.575 +03:00 [INF] CORS policy execution successful.
+2024-05-10 17:05:11.578 +03:00 [INF] Executing endpoint 'ETicaretAPI.API.Controllers.ProductsController.Get (ETicaretAPI.API)'
+2024-05-10 17:05:11.589 +03:00 [INF] Route matched with {action = "Get", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(ETicaret.Application.Features.Queries.Product.GetAllProduct.GetAllProductQueryRequest) on controller ETicaretAPI.API.Controllers.ProductsController (ETicaretAPI.API).
+2024-05-10 17:05:11.624 +03:00 [INF] Get all products
+2024-05-10 17:05:11.782 +03:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM "Products" AS p
+2024-05-10 17:05:11.796 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-05-10 17:05:11.799 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-05-10 17:05:11.813 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."Name", p."Stock", p."Price", p."CreatedDate", p."UpdatedDate"
+FROM "Products" AS p
+LIMIT @__p_1 OFFSET @__p_0
+2024-05-10 17:05:11.821 +03:00 [INF] Executing OkObjectResult, writing value of type 'ETicaret.Application.Features.Queries.Product.GetAllProduct.GetAllProductQueryResponse'.
+2024-05-10 17:05:11.853 +03:00 [INF] Executed action ETicaretAPI.API.Controllers.ProductsController.Get (ETicaretAPI.API) in 261.6776ms
+2024-05-10 17:05:11.855 +03:00 [INF] Executed endpoint 'ETicaretAPI.API.Controllers.ProductsController.Get (ETicaretAPI.API)'
+2024-05-10 17:05:11.856 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7222/api/products?page=0&size5 - 200 null application/json; charset=utf-8 296.5581ms
